@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CashierViewFormController">
+   <children>
+      <AnchorPane fx:id="mainContext" prefHeight="1079.0" prefWidth="1920.0" style="-fx-background-color: white;">
+         <children>
+            <AnchorPane prefHeight="1079.0" prefWidth="448.0" style="-fx-background-color: #00AB5E;">
+               <children>
+                  <AnchorPane prefHeight="228.0" prefWidth="448.0" style="-fx-background-color: #D6FFD5;">
+                     <children>
+                        <ImageView fitHeight="204.0" fitWidth="328.0" layoutX="53.0" layoutY="14.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@../assets/Lara%20Market%20With%20Shadow.png" />
+                           </image>
+                        </ImageView>
+                     </children></AnchorPane>
+                  <JFXButton buttonType="RAISED" layoutY="296.0" onAction="#dashboardOnAction" prefHeight="84.0" prefWidth="448.0" style="-fx-background-color: #D6FFD5;" text="     Cashier Dashboard" textAlignment="CENTER">
+                     <font>
+                        <Font name="Montserrat Medium" size="30.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton buttonType="RAISED" layoutY="598.0" onAction="#customerOrderOnAction" prefHeight="84.0" prefWidth="448.0" style="-fx-background-color: #D6FFD5;" text="Customer Order">
+                     <font>
+                        <Font name="Montserrat Medium" size="30.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton buttonType="RAISED" layoutY="498.0" onAction="#manageOrderOnAction" prefHeight="84.0" prefWidth="448.0" style="-fx-background-color: #D6FFD5;" text="Manage Order">
+                     <font>
+                        <Font name="Montserrat Medium" size="30.0" />
+                     </font>
+                  </JFXButton>
+                  <ImageView fitHeight="53.0" fitWidth="47.0" layoutX="31.0" layoutY="308.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/ic_dashboard_bw.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="47.0" fitWidth="47.0" layoutX="31.0" layoutY="517.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/i_setting_bw.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="47.0" fitWidth="59.0" layoutX="24.0" layoutY="620.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/ic_order_bw.png" />
+                     </image>
+                  </ImageView>
+                  <AnchorPane layoutY="800.0" prefHeight="279.0" prefWidth="448.0" style="-fx-background-color: #D6FFD5;">
+                     <children>
+                        <ImageView fitHeight="117.0" fitWidth="125.0" layoutX="55.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assets/avatar1.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="189.0" layoutY="27.0" text="Cashier">
+                           <font>
+                              <Font name="Montserrat SemiBold" size="40.0" />
+                           </font>
+                        </Label>
+                        <JFXButton buttonType="RAISED" layoutX="192.0" layoutY="79.0" onAction="#logoutOnAction" prefHeight="50.0" prefWidth="139.0" style="-fx-background-color: ff0054;" text="logout" textFill="WHITE">
+                           <font>
+                              <Font name="Montserrat Medium" size="25.0" />
+                           </font>
+                        </JFXButton>
+                        <Label layoutX="29.0" layoutY="166.0" text="Version 1.0.0">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <JFXButton buttonType="RAISED" layoutY="398.0" onAction="#manageCustomerOnAction" prefHeight="84.0" prefWidth="448.0" style="-fx-background-color: #D6FFD5;" text="     Manage Customer">
+                     <font>
+                        <Font name="Montserrat Medium" size="30.0" />
+                     </font>
+                  </JFXButton>
+                  <ImageView fitHeight="47.0" fitWidth="47.0" layoutX="31.0" layoutY="417.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/i_setting_bw.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="detailContext" layoutX="448.0" layoutY="-1.0" prefHeight="1079.0" prefWidth="1472.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ManageCustomerFormController">
+   <children>
+      <AnchorPane prefHeight="1079.0" prefWidth="1472.0" style="-fx-background-color: white;">
+         <children>
+            <TableView fx:id="tblCustomer" layoutX="52.0" layoutY="480.0" prefHeight="462.0" prefWidth="1362.0" stylesheets="@../style/TableForm.css">
+               <columns>
+                  <TableColumn fx:id="colId" prefWidth="154.0" text="Customer Id" />
+                  <TableColumn fx:id="colTitle" prefWidth="133.00003051757812" text="Title" />
+                  <TableColumn fx:id="colName" prefWidth="214.0" text="Name" />
+                  <TableColumn fx:id="colAddress" prefWidth="221.0" text="Address" />
+                  <TableColumn fx:id="colCity" prefWidth="198.0" text="City" />
+                  <TableColumn fx:id="colProvince" prefWidth="266.0" text="Province" />
+                  <TableColumn fx:id="colPostalCode" prefWidth="170.0" text="Postal Code" />
+               </columns>
+            </TableView>
+            <AnchorPane layoutX="398.0" layoutY="113.0" prefHeight="41.0" prefWidth="306.0" styleClass="textPane" stylesheets="@../style/DetailForm.css">
+               <children>
+                  <TextField fx:id="txtCity" layoutX="8.0" layoutY="5.0" prefHeight="31.0" prefWidth="286.0" promptText="Hikkaduwa" styleClass="textField" />
+               </children>
+            </AnchorPane>
+            <Label layoutX="423.0" layoutY="100.0" prefHeight="26.0" prefWidth="54.0" style="-fx-background-color: white;" styleClass="textLabel" text=" City">
+               <font>
+                  <Font name="Montserrat Medium" size="20.0" />
+               </font>
+            </Label>
+            <AnchorPane layoutX="52.0" layoutY="186.0" prefHeight="41.0" prefWidth="306.0" styleClass="textPane" stylesheets="@../style/DetailForm.css">
+               <children>
+                  <TextField fx:id="txtTitle" layoutX="8.0" layoutY="5.0" prefHeight="31.0" prefWidth="286.0" promptText="Mr/Miss/Mrs" styleClass="textField" />
+               </children>
+            </AnchorPane>
+            <Label layoutX="77.0" layoutY="173.0" prefHeight="26.0" prefWidth="64.0" style="-fx-background-color: white;" styleClass="textLabel" text=" Title">
+               <font>
+                  <Font name="Montserrat Medium" size="20.0" />
+               </font>
+            </Label>
+            <AnchorPane layoutX="52.0" layoutY="259.0" prefHeight="41.0" prefWidth="306.0" styleClass="textPane" stylesheets="@../style/DetailForm.css">
+               <children>
+                  <TextField fx:id="txtName" layoutX="8.0" layoutY="5.0" prefHeight="31.0" prefWidth="286.0" promptText="Akila" styleClass="textField" />
+               </children>
+            </AnchorPane>
+            <Label layoutX="77.0" layoutY="246.0" prefHeight="26.0" prefWidth="77.0" style="-fx-background-color: white;" styleClass="textLabel" text=" Name ">
+               <font>
+                  <Font name="Montserrat Medium" size="20.0" />
+               </font>
+            </Label>
+            <AnchorPane layoutX="52.0" layoutY="332.0" prefHeight="41.0" prefWidth="306.0" styleClass="textPane" stylesheets="@../style/DetailForm.css">
+               <children>
+                  <TextField fx:id="txtAddress" layoutX="8.0" layoutY="5.0" prefHeight="31.0" prefWidth="286.0" promptText="No.23" styleClass="textField" />
+               </children>
+            </AnchorPane>
+            <Label layoutX="77.0" layoutY="319.0" prefHeight="26.0" prefWidth="99.0" style="-fx-background-color: white;" styleClass="textLabel" text=" Address ">
+               <font>
+                  <Font name="Montserrat Medium" size="20.0" />
+               </font>
+            </Label>
+            <AnchorPane layoutX="398.0" layoutY="185.0" prefHeight="41.0" prefWidth="306.0" styleClass="textPane" stylesheets="@../style/DetailForm.css">
+               <children>
+                  <TextField fx:id="txtProvince" layoutX="8.0" layoutY="5.0" prefHeight="31.0" prefWidth="286.0" promptText="Southern Province" styleClass="textField" />
+               </children>
+            </AnchorPane>
+            <Label layoutX="423.0" layoutY="172.0" prefHeight="26.0" prefWidth="107.0" style="-fx-background-color: white;" styleClass="textLabel" text=" Province ">
+               <font>
+                  <Font name="Montserrat Medium" size="20.0" />
+               </font>
+            </Label>
+            <AnchorPane layoutX="52.0" layoutY="120.0" prefHeight="41.0" prefWidth="306.0" styleClass="textPane" stylesheets="@../style/DetailForm.css">
+               <children>
+                  <TextField fx:id="txtCustomerId" layoutX="8.0" layoutY="5.0" prefHeight="31.0" prefWidth="286.0" promptText="C001" styleClass="textField" />
+               </children>
+            </AnchorPane>
+            <Label layoutX="77.0" layoutY="107.0" prefHeight="26.0" prefWidth="146.0" style="-fx-background-color: white;" styleClass="textLabel" text=" Customer Id ">
+               <font>
+                  <Font name="Montserrat Medium" size="20.0" />
+               </font>
+            </Label>
+            <Separator layoutX="729.0" layoutY="82.0" orientation="VERTICAL" prefHeight="366.0" prefWidth="14.0" />
+            <JFXButton layoutX="427.0" layoutY="332.0" onAction="#addCustomerOnAction" prefHeight="50.0" prefWidth="249.0" style="-fx-background-color: #06d6a0;" text="Add Customer">
+               <font>
+                  <Font name="Montserrat Medium" size="25.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="1107.0" layoutY="385.0" onAction="#deleteCustomerOnAction" prefHeight="50.0" prefWidth="286.0" style="-fx-background-color: #ef476f;" text="Delete Customer">
+               <font>
+                  <Font name="Montserrat Medium" size="25.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="1107.0" layoutY="319.0" onAction="#updateCustomerOnAction" prefHeight="50.0" prefWidth="286.0" style="-fx-background-color: #ffd166;" text="Modify Customer">
+               <font>
+                  <Font name="Montserrat Medium" size="25.0" />
+               </font>
+            </JFXButton>
+            <Label layoutX="52.0" layoutY="33.0" text="Manage Customer">
+               <font>
+                  <Font name="Montserrat SemiBold" size="30.0" />
+               </font>
+            </Label>
+            <AnchorPane layoutX="398.0" layoutY="257.0" prefHeight="41.0" prefWidth="306.0" styleClass="textPane" stylesheets="@../style/DetailForm.css">
+               <children>
+                  <TextField fx:id="txtPostalCode" layoutX="8.0" layoutY="5.0" prefHeight="31.0" prefWidth="286.0" promptText="12658" styleClass="textField" />
+               </children>
+            </AnchorPane>
+            <Label layoutX="423.0" layoutY="244.0" prefHeight="26.0" prefWidth="136.0" style="-fx-background-color: white;" styleClass="textLabel" text=" Postal Code ">
+               <font>
+                  <Font name="Montserrat Medium" size="20.0" />
+               </font>
+            </Label>
+            <AnchorPane layoutX="1100.0" layoutY="103.0" prefHeight="41.0" prefWidth="306.0" styleClass="textPane" stylesheets="@../style/DetailForm.css">
+               <children>
+                  <TextField fx:id="txtCity2" layoutX="8.0" layoutY="5.0" prefHeight="31.0" prefWidth="286.0" promptText="Hikkaduwa" styleClass="textField" />
+               </children>
+            </AnchorPane>
+            <Label layoutX="1125.0" layoutY="90.0" prefHeight="26.0" prefWidth="54.0" style="-fx-background-color: white;" styleClass="textLabel" text=" City">
+               <font>
+                  <Font name="Montserrat Medium" size="20.0" />
+               </font>
+            </Label>
+            <AnchorPane layoutX="754.0" layoutY="176.0" prefHeight="41.0" prefWidth="306.0" styleClass="textPane" stylesheets="@../style/DetailForm.css">
+               <children>
+                  <TextField fx:id="txtTitle2" layoutX="8.0" layoutY="5.0" prefHeight="31.0" prefWidth="286.0" promptText="Mr/Miss/Mrs" styleClass="textField" />
+               </children>
+            </AnchorPane>
+            <Label layoutX="779.0" layoutY="163.0" prefHeight="26.0" prefWidth="64.0" style="-fx-background-color: white;" styleClass="textLabel" text=" Title">
+               <font>
+                  <Font name="Montserrat Medium" size="20.0" />
+               </font>
+            </Label>
+            <AnchorPane layoutX="754.0" layoutY="249.0" prefHeight="41.0" prefWidth="306.0" styleClass="textPane" stylesheets="@../style/DetailForm.css">
+               <children>
+                  <TextField fx:id="txtName2" layoutX="8.0" layoutY="5.0" prefHeight="31.0" prefWidth="286.0" promptText="Akila" styleClass="textField" />
+               </children>
+            </AnchorPane>
+            <Label layoutX="779.0" layoutY="236.0" prefHeight="26.0" prefWidth="77.0" style="-fx-background-color: white;" styleClass="textLabel" text=" Name ">
+               <font>
+                  <Font name="Montserrat Medium" size="20.0" />
+               </font>
+            </Label>
+            <AnchorPane layoutX="754.0" layoutY="322.0" prefHeight="41.0" prefWidth="306.0" styleClass="textPane" stylesheets="@../style/DetailForm.css">
+               <children>
+                  <TextField fx:id="txtAddress2" layoutX="8.0" layoutY="5.0" prefHeight="31.0" prefWidth="286.0" promptText="No.23" styleClass="textField" />
+               </children>
+            </AnchorPane>
+            <Label layoutX="779.0" layoutY="309.0" prefHeight="26.0" prefWidth="99.0" style="-fx-background-color: white;" styleClass="textLabel" text=" Address ">
+               <font>
+                  <Font name="Montserrat Medium" size="20.0" />
+               </font>
+            </Label>
+            <AnchorPane layoutX="1100.0" layoutY="175.0" prefHeight="41.0" prefWidth="306.0" styleClass="textPane" stylesheets="@../style/DetailForm.css">
+               <children>
+                  <TextField fx:id="txtProvince2" layoutX="8.0" layoutY="5.0" prefHeight="31.0" prefWidth="286.0" promptText="Southern Province" styleClass="textField" />
+               </children>
+            </AnchorPane>
+            <Label layoutX="1125.0" layoutY="162.0" prefHeight="26.0" prefWidth="107.0" style="-fx-background-color: white;" styleClass="textLabel" text=" Province ">
+               <font>
+                  <Font name="Montserrat Medium" size="20.0" />
+               </font>
+            </Label>
+            <AnchorPane layoutX="754.0" layoutY="110.0" prefHeight="41.0" prefWidth="306.0" styleClass="textPane" stylesheets="@../style/DetailForm.css">
+               <children>
+                  <TextField fx:id="txtCustomerId2" layoutX="8.0" layoutY="5.0" onAction="#searchCustomerOnAction" prefHeight="31.0" prefWidth="286.0" promptText="C001" styleClass="textField" />
+               </children>
+            </AnchorPane>
+            <Label layoutX="779.0" layoutY="97.0" prefHeight="26.0" prefWidth="146.0" style="-fx-background-color: white;" styleClass="textLabel" text=" Customer Id ">
+               <font>
+                  <Font name="Montserrat Medium" size="20.0" />
+               </font>
+            </Label>
+            <AnchorPane layoutX="1100.0" layoutY="247.0" prefHeight="41.0" prefWidth="306.0" styleClass="textPane" stylesheets="@../style/DetailForm.css">
+               <children>
+                  <TextField fx:id="txtPostalCode2" layoutX="8.0" layoutY="5.0" prefHeight="31.0" prefWidth="286.0" promptText="25439" styleClass="textField" />
+               </children>
+            </AnchorPane>
+            <Label layoutX="1125.0" layoutY="234.0" prefHeight="26.0" prefWidth="136.0" style="-fx-background-color: white;" styleClass="textLabel" text=" Postal Code ">
+               <font>
+                  <Font name="Montserrat Medium" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

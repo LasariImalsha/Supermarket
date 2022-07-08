@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ManageOrderFormController">
+   <children>
+      <AnchorPane prefHeight="1079.0" prefWidth="1472.0" style="-fx-background-color: white;">
+         <children>
+            <TableView fx:id="tblOrder" layoutX="52.0" layoutY="289.0" prefHeight="650.0" prefWidth="1362.0" stylesheets="@../style/TableForm.css">
+               <columns>
+                  <TableColumn fx:id="colOrderId" prefWidth="198.99996948242188" text="Order Id" />
+                  <TableColumn fx:id="colOrderDate" prefWidth="360.0" text="Order Date" />
+                  <TableColumn fx:id="colCustomerId" prefWidth="234.0" text="Customer Id" />
+                  <TableColumn fx:id="colTime" prefWidth="234.0" text="Time" />
+                  <TableColumn fx:id="colCost" prefWidth="328.0" text="Cost" />
+               </columns>
+            </TableView>
+            <AnchorPane layoutX="752.0" layoutY="120.0" prefHeight="41.0" prefWidth="306.0" styleClass="textPane" stylesheets="@../style/DetailForm.css">
+               <children>
+                  <TextField fx:id="txtCost" layoutX="8.0" layoutY="5.0" prefHeight="31.0" prefWidth="279.0" promptText="0000.00" styleClass="textField" />
+               </children>
+            </AnchorPane>
+            <Label layoutX="777.0" layoutY="107.0" prefHeight="26.0" prefWidth="61.0" style="-fx-background-color: white;" styleClass="textLabel" text=" Cost ">
+               <font>
+                  <Font name="Montserrat Medium" size="20.0" />
+               </font>
+            </Label>
+            <AnchorPane layoutX="52.0" layoutY="185.0" prefHeight="41.0" prefWidth="306.0" styleClass="textPane" stylesheets="@../style/DetailForm.css">
+               <children>
+                  <TextField fx:id="txtDate" layoutX="8.0" layoutY="5.0" prefHeight="31.0" prefWidth="285.0" promptText="2021-05-07" styleClass="textField" />
+               </children>
+            </AnchorPane>
+            <Label layoutX="77.0" layoutY="172.0" prefHeight="26.0" prefWidth="129.0" style="-fx-background-color: white;" styleClass="textLabel" text=" Order Date ">
+               <font>
+                  <Font name="Montserrat Medium" size="20.0" />
+               </font>
+            </Label>
+            <AnchorPane layoutX="399.0" layoutY="121.0" prefHeight="41.0" prefWidth="306.0" styleClass="textPane" stylesheets="@../style/DetailForm.css">
+               <children>
+                  <TextField fx:id="txtCustomerId" layoutX="8.0" layoutY="5.0" prefHeight="31.0" prefWidth="285.0" promptText="C001" styleClass="textField" />
+               </children>
+            </AnchorPane>
+            <Label layoutX="424.0" layoutY="108.0" prefHeight="26.0" prefWidth="146.0" style="-fx-background-color: white;" styleClass="textLabel" text=" Customer Id ">
+               <font>
+                  <Font name="Montserrat Medium" size="20.0" />
+               </font>
+            </Label>
+            <AnchorPane layoutX="399.0" layoutY="187.0" prefHeight="41.0" prefWidth="306.0" styleClass="textPane" stylesheets="@../style/DetailForm.css">
+               <children>
+                  <TextField fx:id="txtTime" layoutX="8.0" layoutY="5.0" prefHeight="31.0" prefWidth="285.0" promptText="02:56 PM" styleClass="textField" />
+               </children>
+            </AnchorPane>
+            <Label layoutX="424.0" layoutY="174.0" prefHeight="26.0" prefWidth="69.0" style="-fx-background-color: white;" styleClass="textLabel" text=" Time ">
+               <font>
+                  <Font name="Montserrat Medium" size="20.0" />
+               </font>
+            </Label>
+            <AnchorPane layoutX="52.0" layoutY="119.0" prefHeight="41.0" prefWidth="306.0" styleClass="textPane" stylesheets="@../style/DetailForm.css">
+               <children>
+                  <TextField fx:id="txtOrderId" layoutX="8.0" layoutY="5.0" onAction="#searchIdOnAction" prefHeight="31.0" prefWidth="285.0" promptText="O-0001" styleClass="textField" />
+               </children>
+            </AnchorPane>
+            <Label layoutX="77.0" layoutY="106.0" prefHeight="26.0" prefWidth="96.0" style="-fx-background-color: white;" styleClass="textLabel" text=" Order Id">
+               <font>
+                  <Font name="Montserrat Medium" size="20.0" />
+               </font>
+            </Label>
+            <JFXButton layoutX="1119.0" layoutY="181.0" onAction="#deleteOrderOnAction" prefHeight="50.0" prefWidth="279.0" style="-fx-background-color: #ef476f;" text="Delete Order">
+               <font>
+                  <Font name="Montserrat Medium" size="25.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="1119.0" layoutY="113.0" onAction="#updateOrderOnAction" prefHeight="50.0" prefWidth="279.0" style="-fx-background-color: #ffd166;" text="Modify Order">
+               <font>
+                  <Font name="Montserrat Medium" size="25.0" />
+               </font>
+            </JFXButton>
+            <Label layoutX="52.0" layoutY="32.0" text="Manage Order">
+               <font>
+                  <Font name="Montserrat SemiBold" size="30.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

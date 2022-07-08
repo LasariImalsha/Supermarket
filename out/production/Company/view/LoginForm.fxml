@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="1082.0" prefWidth="1919.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginFormController">
+   <children>
+      <AnchorPane fx:id="mainContext" prefHeight="1079.0" prefWidth="1920.0" style="-fx-background-color: white;">
+         <children>
+            <ImageView fitHeight="1080.0" fitWidth="1949.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/background2.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="607.0" fitWidth="884.0" layoutX="216.0" layoutY="258.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/login%20(2).jpg" />
+               </image>
+            </ImageView>
+            <AnchorPane layoutX="1107.0" layoutY="188.0" prefHeight="696.0" prefWidth="514.0" style="-fx-background-color: #00AB5E; -fx-background-radius: 50;">
+               <children>
+                  <JFXTextField fx:id="txtUserName" labelFloat="true" layoutX="155.0" layoutY="331.0" prefHeight="44.0" prefWidth="298.0" promptText="User Name" style="-fx-background-color: white;">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXPasswordField labelFloat="true" layoutX="155.0" layoutY="425.0" prefHeight="44.0" prefWidth="298.0" promptText="Password" style="-fx-background-color: white;">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </JFXPasswordField>
+                  <JFXButton buttonType="RAISED" layoutX="148.0" layoutY="541.0" onAction="#loginOnAction" prefHeight="32.0" prefWidth="231.0" style="-fx-background-color: #D6FFD5; -fx-background-radius: 50;" text="Login">
+                     <font>
+                        <Font name="Montserrat Medium" size="30.0" />
+                     </font>
+                  </JFXButton>
+                  <ImageView fitHeight="65.0" fitWidth="79.0" layoutX="60.0" layoutY="320.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/icnUser.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="53.0" fitWidth="72.0" layoutX="66.0" layoutY="420.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/icnKey.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="297.0" fitWidth="462.0" layoutX="23.0" layoutY="19.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../assets/Lara%20Market%20With%20Shadow.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
